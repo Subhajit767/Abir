@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree Of Fitness(DOF)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            font-family: 'Alkatra', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('images/gym.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #left {
+            /* border: 2px solid yellow; */
+            color: white;
+            display: inline-block;
+            position: absolute;
+            left: 4px;
+            top: 4px;
+        }
+
+        #mid {
+            /* border: 2px solid green; */
+            color: white;
+            margin: 4px auto;
+            width: 38%;
+        }
+
+        #right {
+            /* border: 2px solid pink; */
+            color: white;
+            display: inline-block;
+            position: absolute;
+            right: 4px;
+            top: 15px;
+        }
+
+        #left img {
+            width: 136px;
+            filter: invert(100%);
+        }
+
+        #left1 {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        #mid1 li {
+            display: inline-block;
+        }
+
+        #mid1 li a {
+            text-decoration: none;
+            color: white;
+            /* font-family: 'Alkatra', cursive; */
+            padding: 11px;
+            margin: auto;
+        }
+
+        #mid1 li a:hover,
+        #mid1 li a:active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .right1 {
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 4px;
+            margin: 3px;
+            font-size: 14px;
+            background-color: greenyellow;
+        }
+
+        .right1:hover {
+            color: aqua;
+            background-color: grey;
+        }
+
+        #container {
+            /* border: 2px solid pink; */
+            margin: 100px auto;
+            width: 50%;
+            text-align: center;
+            color: white;
+        }
+
+        .form input {
+            border: 2px solid white;
+            margin: 8px 29px;
+            text-align: center;
+            display: block;
+            width: 608px;
+            font-size: 15px;
+            border-radius: 8px;
+            padding: 2px;
+        }
+
+        #btn1 {
+            position: absolute;
+            top: 448px;
+            left: 535px;
+            border-radius: 5px;
+            font-size: 17px;
+            padding: 4px;
+            margin: 2px;
+            cursor:pointer;
+        }
+
+        #btn2 {
+            position: absolute;
+            top: 448px;
+            left: 691px;
+            border-radius: 5px;
+            font-size: 17px;
+            padding: 4px;
+            margin: 2px;
+            cursor:pointer;
+        }
+
+        .btn{
+            background-color: rgb(87, 184, 184);
+        }
+        .btn:hover{
+            color:black;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="left">
+            <img src="images/download.png" alt="Error loading">
+            <div id="left1">Degree Of Fitness</div>
+        </div>
+        <div id="mid">
+            <ul id="mid1">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <button class="right1">Call Us Now</button>
+            <button class="right1">Email Us</button>
+        </div>
+        <div id="container">
+            <h2>Join the best gym of Durgapur now at a very nominal price.</h2>
+            <form action="nophp.php">
+                <div class="form">
+                    <input type="text" placeholder="Enter your Name">
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Enter your Age">
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Enter your Gender">
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Enter your Locality">
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Enter your Contact No">
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Enter your Phone No">
+                </div>
+                <button id="btn1" class="btn">Submit Now</button>
+                <button id="btn2" class="btn">Reset Now</button>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
